@@ -159,6 +159,8 @@
     <ClInclude Include="LuckPermsNS.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Receivers.h" />
+    <ClInclude Include="TrueHandler.h" />
+    <ClInclude Include="var.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ccanticheat.cpp" />

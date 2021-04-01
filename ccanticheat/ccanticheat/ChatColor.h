@@ -6,7 +6,7 @@
 
 using namespace std;
 
-enum ChatColors
+enum class ChatColors
 {
 	CHATCOLOR_BLACK,
 	CHATCOLOR_DARKRED,
@@ -26,7 +26,7 @@ enum ChatColors
 	CHATCOLOR_WHITE
 };
 
-enum ChatCosmetics
+enum class ChatCosmetics
 {
 	CHATCOSMETICS_RANDOMLETTER,
 	CHATCOSMETICS_STRIKETROUGH,

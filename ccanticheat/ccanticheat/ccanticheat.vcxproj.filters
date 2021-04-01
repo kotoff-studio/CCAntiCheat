@@ -9,6 +9,8 @@
     <ClInclude Include="LuckPermsNS.h" />
     <ClInclude Include="BanTypes.h" />
     <ClInclude Include="ConfigHandler.h" />
+    <ClInclude Include="var.h" />
+    <ClInclude Include="TrueHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />

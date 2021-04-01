@@ -8,6 +8,7 @@
 #include "LuckPermsNS.h"
 #include "BanTypes.h"
 #include "ConfigHandler.h"
+#include "var.h"
 #define PAPERFUNC_BanPlayer 0x7FA940DD1E32
 #define PAPERFUNC_KickPlayer 0x7FE9312FA518
 #define PAPERFUNC_SendMessageChat 0x7FFAB6C31E80

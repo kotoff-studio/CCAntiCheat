@@ -1,1 +1,4 @@
-﻿  ccanticheat.vcxproj -> C:\Users\admin\source\repos\ccanticheat\Debug\ccanticheat.lib
+﻿  ccanticheat.cpp
+C:\Users\admin\source\repos\ccanticheat\ccanticheat\ccanticheat.cpp(4,10): error C2855: параметр командной строки "/source-charset" несовместим с предкомпилированным заголовком
+C:\Users\admin\source\repos\ccanticheat\ccanticheat\ccanticheat.cpp(4,10): error C2855: параметр командной строки "/execution-charset" несовместим с предкомпилированным заголовком
+C:\Users\admin\source\repos\ccanticheat\ccanticheat\ccanticheat.cpp(4,10): fatal error C1903: не удается восстановить после предыдущих ошибок; остановка компиляции
