@@ -8,6 +8,7 @@
     <ClInclude Include="Receivers.h" />
     <ClInclude Include="LuckPermsNS.h" />
     <ClInclude Include="BanTypes.h" />
+    <ClInclude Include="ConfigHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />

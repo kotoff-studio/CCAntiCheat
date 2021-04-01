@@ -7,6 +7,7 @@
 #include "Receivers.h"
 #include "LuckPermsNS.h"
 #include "BanTypes.h"
+#include "ConfigHandler.h"
 #define PAPERFUNC_BanPlayer 0x7FA940DD1E32
 #define PAPERFUNC_KickPlayer 0x7FE9312FA518
 #define PAPERFUNC_SendMessageChat 0x7FFAB6C31E80
@@ -122,7 +123,7 @@ void KillAuraDetect()
 {
 	if (KillAura() == true)
 	{
-		fout << "PLAYER: &cheater . DETECT: KILLAURA. DEFEATED: TRUE. DEFEAT-TYPE: KICK";
+		fout << "PLAYER: &cheater . DETECT: KILLAURA. DEFEATED: TRUE. DEFEAT-TYPE: KICK\n";
 	}
 }
 
@@ -141,7 +142,7 @@ void ImpactDetect()
 {
 	if (Impact() == true)
 	{
-		fout << "PLAYER: &cheater . DETECT: IMPACT. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.";
+		fout << "PLAYER: &cheater . DETECT: IMPACT. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.\n";
 	}
 }
 
@@ -160,7 +161,7 @@ void HuzuniDetect()
 {
 	if (Huzuni() == true)
 	{
-		fout << "PLAYER: &cheater . DETECT: HUZUNI. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.";
+		fout << "PLAYER: &cheater . DETECT: HUZUNI. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.\n";
 	}
 }
 
@@ -179,7 +180,7 @@ void FLDetect()
 {
 	if (FL() == true)
 	{
-		fout << "PLAYER: &cheater . DETECT: FLAUNCHER. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.";
+		fout << "PLAYER: &cheater . DETECT: FLAUNCHER. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.\n";
 	}
 }
 
@@ -198,7 +199,7 @@ void KamiblueDetect()
 {
 	if (Kamiblue() == true)
 	{
-		fout << "PLAYER: &cheater . DETECT: KAMI BLUE. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.";
+		fout << "PLAYER: &cheater . DETECT: KAMI BLUE. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.\n";
 	}
 }
 
@@ -217,7 +218,7 @@ void AristoisDetect()
 {
 	if (Aristois() == true)
 	{
-		fout << "PLAYER: &cheater . DETECT: ARISTOIS. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.";
+		fout << "PLAYER: &cheater . DETECT: ARISTOIS. DEFEATED: TRUE. DEFEAT-TYPE: IPBAN 30 MIN.\n";
 	}
 }
 
@@ -235,7 +236,7 @@ void RocketDetect()
 {
 	if (Rocket() == true)
 	{
-		fout << "PLAYER: &cheater . DETECT: ROCKET. DEFEATED: TRUE. DEFEAT-TYPE: HWIDBAN 60 MIN.";
+		fout << "PLAYER: &cheater . DETECT: ROCKET. DEFEATED: TRUE. DEFEAT-TYPE: HWIDBAN 60 MIN.\n";
 	}
 }
 
@@ -256,7 +257,7 @@ void HealthHacksDetect()
 {
 	if (HealthHacks() == true)
 	{
-		fout << "PLAYER: &cheater . DETECT: HEALTH HACKS. DEFEATED: TRUE. DEFEAT-TYPE: HWIDBAN 25 MIN.";
+		fout << "PLAYER: &cheater . DETECT: HEALTH HACKS. DEFEATED: TRUE. DEFEAT-TYPE: HWIDBAN 25 MIN.\n";
 	}
 }
 
@@ -268,6 +269,7 @@ bool ProcessHacker()
 		system("taskkill /F /T /IM ProcessHacker.exe");
 		system("taskkill /F /T /IM javaw.exe");
 		printf("You cannot play with hacking programs, like Process Hacker!");
+		system("pause");
 	}
 }
 
@@ -275,7 +277,7 @@ void ProcessHackerDetect()
 {
 	if (ProcessHacker() == true)
 	{
-		fout << "PLAYER: UNKNOWN. DETECT: PROCESS HACKER. DEFEATED: TRUE. DEFEAT-TYPE: PROCESS TERMINATED";
+		fout << "PLAYER: UNKNOWN. DETECT: PROCESS HACKER. DEFEATED: TRUE. DEFEAT-TYPE: PROCESS TERMINATED\n";
 	}
 }
 
@@ -287,6 +289,7 @@ bool CheatEngine()
 		system("taskkill /F /T /IM cheatengine-x86_64-SSE4-AVX2.exe.exe");
 		system("taskkill /F /T /IM javaw.exe");
 		printf("You cannot play with hacking programs, like Cheat Engine!");
+		system("pause");
 	}
 }
 
@@ -294,6 +297,6 @@ void CheatEngineDetect()
 {
 	if (CheatEngine() == true)
 	{
-		fout << "PLAYER: UNKNOWN. DETECT: CHEAT ENGINE. DEFEATED: TRUE. DEFEAT-TYPE: PROCESS TERMINATED";
+		fout << "PLAYER: UNKNOWN. DETECT: CHEAT ENGINE. DEFEATED: TRUE. DEFEAT-TYPE: PROCESS TERMINATED\n";
 	}
 }

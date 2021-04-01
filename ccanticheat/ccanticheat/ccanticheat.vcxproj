@@ -154,6 +154,7 @@
     <ClInclude Include="BanTypes.h" />
     <ClInclude Include="CCAntiCheat.h" />
     <ClInclude Include="ChatColor.h" />
+    <ClInclude Include="ConfigHandler.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="LuckPermsNS.h" />
     <ClInclude Include="pch.h" />
