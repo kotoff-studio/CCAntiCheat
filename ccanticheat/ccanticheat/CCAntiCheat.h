@@ -4,11 +4,8 @@
 #include <thread>
 #include <TlHelp32.h>
 #include "ChatColor.h"
-#include "Receivers.h"
-#include "LuckPermsNS.h"
 #include "BanTypes.h"
 #include "ConfigHandler.h"
-#include "var.h"
 #define PAPERFUNC_BanPlayer 0x7FA940DD1E32
 #define PAPERFUNC_KickPlayer 0x7FE9312FA518
 #define PAPERFUNC_SendMessageChat 0x7FFAB6C31E80
@@ -19,6 +16,33 @@
 #define JavaScanString 0x610A3A4
 
 using namespace std;
+
+namespace LuckPerms {
+	class Permissions
+	{
+	public:
+		enum class PermType {
+			AllAdms,
+			Admin,
+			Developer,
+			Operator,
+			Moderator,
+			Builder,
+			Helper
+		};
+	};
+}
+
+enum ReceiversType
+{
+	AllAdms = LuckPerms::Permissions(AllAdms),
+	Admin = LuckPerms::Permissions(Admin),
+	Developer = LuckPerms::Permissions(Developer),
+	Operator = LuckPerms::Permissions(Operator),
+	Moder = LuckPerms::Permissions(Moder),
+	Builder = LuckPerms::Permissions(Builder),
+	Helper = LuckPerms::Permissions(Helper)
+};
 
 void BanPlayer(DWORD* playerName, int time, const char* reasonText, BanTypes banType)
 {

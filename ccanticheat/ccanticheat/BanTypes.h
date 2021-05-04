@@ -1,6 +1,4 @@
 #pragma once
-#include "LuckPermsNS.h"
-#include "Receivers.h"
 #include "CCAntiCheat.h"
 #include "ChatColor.h"
 

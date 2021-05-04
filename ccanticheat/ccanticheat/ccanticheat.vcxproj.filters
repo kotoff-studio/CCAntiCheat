@@ -1,23 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="CCAntiCheat.h" />
-    <ClInclude Include="ChatColor.h" />
-    <ClInclude Include="Receivers.h" />
-    <ClInclude Include="LuckPermsNS.h" />
-    <ClInclude Include="BanTypes.h" />
-    <ClInclude Include="ConfigHandler.h" />
-    <ClInclude Include="var.h" />
-    <ClInclude Include="TrueHandler.h" />
+    <ClInclude Include="BanTypes.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CCAntiCheat.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatColor.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigHandler.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="sigscan.hpp">
+      <Filter>signatures</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook.h">
+      <Filter>hook</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp" />
-    <ClCompile Include="ccanticheat.cpp" />
+    <Filter Include="cpp">
+      <UniqueIdentifier>{f8b4ded4-fdab-4962-9d28-a750d0ae663b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hpp">
+      <UniqueIdentifier>{b3634a65-8fd2-41fe-8967-cc6c95474754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sql">
+      <UniqueIdentifier>{c3c6071e-72c2-4a0e-9294-824152681e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asm">
+      <UniqueIdentifier>{b0d61451-baa0-4dbe-b3cf-d18ef7131ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c">
+      <UniqueIdentifier>{219e145b-ada2-4da0-bc61-3ff8af0d969a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="signatures">
+      <UniqueIdentifier>{a538c008-f646-4ee9-b1a1-7fa96ea9aa26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hook">
+      <UniqueIdentifier>{eab43547-013b-4b39-bb81-fe7b0902c790}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Log.html" />
-    <None Include="ACDB.sql" />
+    <ClCompile Include="ccanticheat.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>c</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ACDB.sql">
+      <Filter>sql</Filter>
+    </None>
+    <None Include="main.asm">
+      <Filter>asm</Filter>
+    </None>
   </ItemGroup>
 </Project>
